@@ -1,2 +1,10 @@
 # Internal lecture-only artifacts
 LECTURE_SCRIPT.md
+
+# macOS
+.DS_Store
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
