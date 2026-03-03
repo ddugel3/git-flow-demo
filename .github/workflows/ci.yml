@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate text
+        run: |
+          if grep -R "error" . --exclude-dir=.git; then
+            echo "Found forbidden text: error"
+            exit 1
+          fi
+          echo "CI passed"
