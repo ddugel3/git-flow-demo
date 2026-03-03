@@ -5,3 +5,4 @@ cd demo trigger 17:07:05
 cli pr demo 17:40:51
 fix hook-test.txt for issue #5
 update from issue #6 via CLI
+update from issue #6 via CLI
