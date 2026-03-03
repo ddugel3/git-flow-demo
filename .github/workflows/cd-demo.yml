@@ -1,0 +1,15 @@
+name: CD Demo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate deploy
+        run: |
+          echo "Deploying commit ${GITHUB_SHA} to production..."
+          sleep 3
+          echo "Deployment completed."
