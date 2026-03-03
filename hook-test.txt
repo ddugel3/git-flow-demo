@@ -1,0 +1,2 @@
+hook pre-push test
+one more line for commit hook test
